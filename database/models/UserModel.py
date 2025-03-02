@@ -10,5 +10,3 @@ class UserModel(Base):
     username: Mapped[str] = mapped_column(unique=True)
     email: Mapped[str] = mapped_column(unique=True)
     phone_number: Mapped[str] = mapped_column(unique=True)
-
-    async def add(self):
